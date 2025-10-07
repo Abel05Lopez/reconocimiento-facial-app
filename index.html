@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Facial en Vivo</title>
+    <script src="face-api.min.js"></script>
+    <style>
+        body { margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; background-color: #2c3e50; color: white; }
+        h1 { margin-bottom: 20px; }
+        #video-container { position: relative; }
+        canvas { position: absolute; top: 0; left: 0; }
+    </style>
+</head>
+<body>
+    <h1>Reconocimiento Facial en Vivo</h1>
+    <div id="video-container">
+        <video id="video" width="720" height="560" autoplay muted></video>
+    </div>
+    <script defer src="main.js"></script>
+</body>
+</html>
